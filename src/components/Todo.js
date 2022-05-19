@@ -1,8 +1,10 @@
-function Todo() {
+function Todo({ text }) {
   return (
     <div className="card">
-      <h2>TITLE</h2>
-      <button className="btn">delete</button>
+      <h2>{text}</h2>
+      <div className="actions">
+        <button className="btn">delete</button>
+      </div>
     </div>
   );
 }
