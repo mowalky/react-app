@@ -4,9 +4,12 @@ import AllMeetupsPage from "./pages/AllMeetups";
 import FavoritesPage from "./pages/Favorite";
 import NewMeetupPage from "./pages/NewMeetup";
 
+import MainNavigation from "./components/layout/MainNavigation";
+
 function App() {
   return (
     <div>
+      <MainNavigation />
       <Switch>
         <Route path="/" exact>
           <AllMeetupsPage />
