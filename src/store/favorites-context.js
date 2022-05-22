@@ -13,7 +13,6 @@ export function FavoritesContextProvider(props) {
 
   function addFavoriteHandler(favoriteMeeptup) {
     setUserFavorites((prevUserFavorites) => {
-      console.log(prevUserFavorites.concat(favoriteMeeptup));
       return prevUserFavorites.concat(favoriteMeeptup);
     });
   }
@@ -25,7 +24,6 @@ export function FavoritesContextProvider(props) {
   }
 
   function itemIsFavoriteHandler(meetupId) {
-    console.log(userFavorites);
     return userFavorites.some((favorite) => favorite.id === meetupId);
   }
 
